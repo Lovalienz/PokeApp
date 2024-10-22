@@ -13,7 +13,10 @@ hilt = "2.51"
 retrofit = "2.11.0"
 coilCompose = "2.6.0"
 hiltNavigationCompose = "1.2.0"
-
+lottie-compose = "6.1.0"
+material3 = "1.2.0"
+constraintlayout = "2.1.4"
+constraint-layout-compose = "1.0.1"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -29,16 +32,19 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-
+material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
 pagingCompose = { group = "androidx.paging", name = "paging-compose", version.ref = "pagingCompose" }
-
+constraint-layout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraint-layout-compose" }
 dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 dagger-hilt-navigation = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 
 retrofit2-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie-compose" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -1,7 +1,7 @@
 package com.poke.pokemonapp.di
 
 import com.poke.pokemonapp.core.Config
-import com.poke.pokeapp.data.dataSource.remote.service.PokeApiService
+import com.poke.pokemonapp.data.dataSource.remote.service.PokeApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -21,9 +21,13 @@ object NetworkModule {
             .baseUrl(Config.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
-            .build()
 
+            .build()
+    @Provides
     fun providePokemonApi(retrofit: Retrofit): PokeApiService =
         retrofit.create(PokeApiService::class.java)
+    @Provides
+    fun provideOkHttpClient(): OkHttpClient =
+        OkHttpClient.Builder().build()
 
 }

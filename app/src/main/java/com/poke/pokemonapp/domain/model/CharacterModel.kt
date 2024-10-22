@@ -6,5 +6,6 @@ data class CharacterModel(
     val height: Int,
     val weight: Int,
     val abilities: List<Abilities>,
-    val sprites: FrontDefault
+    val sprites: FrontDefault,
+    var isFavorite: Boolean = false
 )

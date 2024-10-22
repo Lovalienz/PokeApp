@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     kotlin("kapt")
+    alias(libs.plugins.hilt)
+
 }
 
 android {
@@ -52,6 +54,7 @@ android {
 
 dependencies {
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -64,17 +67,17 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
-
+    implementation(libs.material3)
     implementation(libs.pagingCompose)
     implementation(libs.dagger.hilt)
     implementation(libs.dagger.hilt.navigation)
     kapt(libs.dagger.hilt.compiler)
-
+    implementation (libs.constraint.layout.compose)
     implementation(libs.coil.compose)
 
     implementation(libs.retrofit2.retrofit)
     implementation(libs.converter.gson)
-
+    implementation(libs.lottie.compose)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
