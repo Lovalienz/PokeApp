@@ -47,8 +47,8 @@ fun SplashScreen(onNavigation: () -> Unit) {
         isVisibleName = !isVisibleName
         isVisibleText = !isVisibleText
         delay(1800)
-        isVisibleText = !isVisibleText
-        delay(800)
+
+        delay(1000)
         onNavigation()
     }
 
